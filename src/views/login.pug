@@ -1,0 +1,23 @@
+extends index.pug 
+
+block main
+    p.textup Welcome to Schedule Management System. 
+    p.textup Please login to your profile or register now. 
+    form(action="/login" method="POST")
+        div
+            p.textinput Email:
+            input.inputblock(type="text" name="email" required=true)
+        br
+        div
+            p.textinput Password:
+            input.inputblock(type="password" name="password" required=true)
+        br
+        input.button1(type="submit")
+        br
+    div= answer
+    div#message= message
+    div
+        p You don't have an account?
+        button.button1(onclick="window.location.href='/register'") Create one now!
+
+    

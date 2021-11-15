@@ -1,0 +1,17 @@
+extends index.pug 
+
+block main
+  nav(action="/mainpage" method="POST")
+    ul(class="reveal")
+      li
+        a.nav(href='/main' ) User Info
+      li
+        a.nav(href='/schedules') Schedules
+      li
+        a.nav(href='/logout') Logout
+
+block userinfo
+  div
+    p.textinput Name: #{name}
+    p.textinput Surname: #{surname} 
+    p.textinput Email: #{email}

@@ -1,0 +1,19 @@
+extends index.pug 
+
+block main
+  nav(action="/mainpage" method="POST")
+    ul(class="reveal")
+      li
+        a.nav(href='/main' ) User Info
+      li
+        a.nav(href='/schedules') Schedules
+      li
+        a.nav(href='/logout') Logout
+        
+block schedules
+    div#message= message
+    button.button1(onclick="window.location.href='/schedule/new'") Add new one
+
+block scripts
+    script
+        include ./scripts/users_script.js

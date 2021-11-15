@@ -1,0 +1,89 @@
+body {
+	font-family: 'Montserrat', sans-serif;
+	background-color: rgb(182, 48, 93);
+	position: relative;
+}
+.inputblock {
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	padding: 10px;
+
+}
+.textinput{
+	font-weight: 800;
+}
+.textup{
+	padding: 10px;
+	font-weight: 800;
+	color: white; text-shadow: black 0.1em 0.1em 0.2em;
+	font-size:20px;
+}
+.button1 {
+	border: none;
+	color: rgb(27, 212, 67);
+	padding: 14px 45px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	transition-duration: 0.4s;
+	cursor: pointer;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	font-weight: bold;
+}
+.button1:hover {
+	background-color: #eb4592;
+	color: white;
+}
+
+th,
+td,
+p,
+input {
+	font: 14px Verdana;
+}
+table,
+th,
+td {
+	max-width: 1000px;
+	font-size: larger;
+	background: #000;
+	background: linear-gradient(rgba(67,251,63,1) 11%, rgba(0,0,0,0.9) 100%);
+	color: #fff;
+	text-align: right;
+	padding-bottom: 30px;
+	text-shadow: 0 0 1px #000;
+	
+}
+th {
+	font-weight: bold;
+}
+.footer {
+	color: rgb(54, 22, 39);
+	
+	font-style: italic;
+	padding: 15px;
+	font-weight: bolder;
+	font-size: 15px;
+	text-shadow: 0.1em 0.1em 0.2em rgb(192, 123, 140)
+}
+.nav{
+	color: rgb(54, 22, 39);
+	
+	font-style: italic;
+	padding: 10px;
+	font-weight: bolder;
+	font-size: 35px;
+	text-shadow: 0.1em 0.1em 0.2em rgb(192, 123, 140)
+
+}
+.nav:hover {
+	background-color: #eb4592;
+	color: white;
+}

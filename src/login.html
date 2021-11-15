@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<title>Example Login Form</title>
+  </head>
+  <body>
+	<form method="post" id="contact_form" class="sForm">
+		<div class="outerDiv"><div class="divInner"><label for="name" class= "colorLab">Nom*</label></div>
+		<div><input type="text" name="name" id="name" class="formField" placeholder="Wpisz imię..." required=true pattern="\w+" title="Użyj tylko liter"/></div>
+		
+		<div class="divInner"><label for="surname" class= "colorLab">Prenom*</label></div>
+		<div><input type="text" name="surName" id="surname" class="formField"  placeholder="Wpisz nazwisko..." required=true pattern="\w+" title="Użyj tylko liter"/></div>
+   
+		<div class="divInner"><label for="phone" class= "colorLab">Telephone</label></div>
+		<div><input type="text" name="phone" id="phone" class="formField"  placeholder="Wpisz numer..." pattern="\+{0,1}[0-9]{9,25}" title="Użyj tylko cyfr (co najmniej 9), dopuszczalny jest znak + na początku"/></div>
+   
+		<div class="divInner"><label for="email" class= "colorLab">Adresse email*</label></div>
+		<div><input type="email" name="email" id="email" class="formField"  placeholder="Wpisz adres email..." required=true pattern="\w+@\w+.(\w){2,5}" title="Adres składa się z nazwy użytkownika, następnie znak @, następnie nazwa domeny, która musi zawierać kropkę - na przykład jan@muzyka.pl"/></div>
+		
+		<div class="divInner"><label for="message" class= "colorLab">Message*</label></div>
+		<div><textarea name="message" id="message" class="formFieldMes"  placeholder="Wiadomość" required=true></textarea></div>
+	   <div><button id="sendBtn" type="submit" class="sButton">On vous attend !</button></div></div>
+   </form>;
+   <form method="post" id="contact_form" class="sForm">
+  	Username:<br>
+  	<div class="divInner"><label for="email" class= "colorLab">Adresse email*</label></div>
+		<div><input type="email" name="email" id="email" class="formField"  placeholder="Wpisz adres email..." required=true pattern="\w+@\w+.(\w){2,5}" title="Adres składa się z nazwy użytkownika, następnie znak @, następnie nazwa domeny, która musi zawierać kropkę - na przykład jan@muzyka.pl"/></div>
+		
+  	Password:<br>
+  	<input type="password" name="password" placeholder="Password" required><br><br>
+  	<input type="submit" value="login">
+	</form>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+extends index.pug 
+
+block main
+        form(action="/schedule/new" method="POST")
+            p User ID:
+            input(type="number" name="User_ID" required=true min="1" value=1200)
+            p Day:
+            input(type="number" name="Day" required=true min="1" max="7")
+            p Start work at:
+            input(type="time" name="From" required=true step=300)
+            p End work at:
+            input(type="time" name="To" required=true step=300)
+            br
+            br
+            input(type="submit")
+            br
+            div= answer
+            div#message= message
+            button.button1#button_users
+                a(href='/schedules') Back to Schedules
+
+block scripts
+    script
+        include ./scripts/users_script.js

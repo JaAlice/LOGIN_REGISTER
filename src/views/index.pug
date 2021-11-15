@@ -1,0 +1,20 @@
+html
+  head
+    title= title
+    style
+        include ./styles.css
+  body
+    header
+    block main
+        <h1><a href="/">Schedule Management System</a></h1>
+        div='This is the main page, please LOgiN'
+        button.button1#button_users
+            a(href='/login') LOG    
+    footer
+        div      
+            p.footer="Powerd by SuperAli"
+
+    block userinfo
+    block schedules
+        
+    block scripts

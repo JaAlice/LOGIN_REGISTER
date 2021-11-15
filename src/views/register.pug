@@ -1,0 +1,18 @@
+extends index.pug 
+
+block main
+        form(action="/register" method="POST")
+            p First name:
+            input.inputblock(type="text" name="firstname" required=true)
+            p Last Name:
+            input.inputblock(type="text" name="lastname" required=true)
+            p Email:
+            input.inputblock(type="email" name="email" required=true)
+            p Password:
+            input.inputblock(type="text" name="password" required=true)
+            br
+            br
+            input.button1(type="submit")
+            br
+            div= message
+        button.button1(onclick="window.location.href='/login'") Back to login
